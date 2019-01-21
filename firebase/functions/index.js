@@ -1,10 +1,5 @@
-/**
- * React Native Starter Kit - Firebase Cloud Functions
- * - A collection of example cloud functions to use with this project
- *
- * React Native Starter App
- * https://github.com/mcnamee/react-native-starter-kit
- */
+// Firebase Cloud Functions
+
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
 
