@@ -72,18 +72,18 @@ export function setError(message) {
 }
 
 /**
-  * Get Recipes
+  * Get Stories
   */
 export function getRecipes() {
   if (Firebase === null) return () => new Promise(resolve => resolve());
 
-  return dispatch => new Promise(resolve => FirebaseRef.child('recipes')
+  return dispatch => new Promise(resolve => FirebaseRef.child('stories')
     .on('value', (snapshot) => {
-      const recipes = snapshot.val() || [];
+      const stories = snapshot.val() || [];
 
       return resolve(dispatch({
         type: 'RECIPES_REPLACE',
-        data: recipes,
+        data: stories,
       }));
     })).catch(e => console.log(e));
 }

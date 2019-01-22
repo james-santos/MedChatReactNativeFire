@@ -12,12 +12,12 @@ import {
 import { Link } from 'react-router-dom';
 import Error from './Error';
 
-const RecipeListing = ({ error, loading, recipes }) => {
+const RecipeListing = ({ error, loading, stories }) => {
   // Error
   if (error) return <Error content={error} />;
 
   // Build Cards for Listing
-  const cards = recipes.map(item => (
+  const cards = stories.map(item => (
     <Card key={`${item.id}`}>
       <Link to={`/recipe/${item.id}`}>
         <CardImg top src={item.image} alt={item.title} />
@@ -63,7 +63,7 @@ const RecipeListing = ({ error, loading, recipes }) => {
 RecipeListing.propTypes = {
   error: PropTypes.string,
   loading: PropTypes.bool.isRequired,
-  recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  stories: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 RecipeListing.defaultProps = {

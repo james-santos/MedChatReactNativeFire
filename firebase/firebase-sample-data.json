@@ -3,7 +3,7 @@
   },
   "favourites": {
   },
-  "meals": [
+  "shift": [
     {
       "id": 1,
       "title": "Day Shift"
@@ -13,7 +13,7 @@
       "title": "Night Shift"
     }
   ],
-  "recipes" : [
+  "stories" : [
     {
       "id": 1,
       "slug": "this-is-an-article",
