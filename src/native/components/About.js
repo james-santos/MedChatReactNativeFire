@@ -9,7 +9,7 @@ const About = () => (
     <Content padder>
       <Spacer size={30} />
       <H1>
-        Heading 1
+        Welcome to MedChat
       </H1>
       <Spacer size={10} />
       <Text>

@@ -40,3 +40,28 @@ App.propTypes = {
 };
 
 export default App;
+
+
+/* Define all your routes in one React component...
+
+const App = () => (
+  <Router>
+    <Stack key="root">
+      <Scene key="login" component={Login} title="Login"/>
+      <Scene key="register" component={Register} title="Register"/>
+      <Scene key="home" component={Home}/>
+    </Stack>
+  </Router>
+);
+...and navigate from one scene to another scene with a simple and powerful API.
+
+// Login.js
+
+// navigate to 'home' as defined in your top-level router
+Actions.home(PARAMS)
+
+// go back (i.e. pop the current screen off the nav stack)
+Actions.pop()
+
+// refresh the current Scene with the specified props
+Actions.refresh({param1: 'hello', param2: 'world'}) */

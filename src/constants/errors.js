@@ -1,6 +1,8 @@
+// Shared variables (across platforms)
+
 export default {
   // Defaults
-  default: 'Hmm, an unknown error occured',
+  default: 'An unknown error occured',
   timeout: 'Server Timed Out. Check your internet connection',
   invalidJson: 'Response returned is not valid JSON',
 
@@ -15,9 +17,9 @@ export default {
   missingPassword: 'Password is missing',
   passwordsDontMatch: 'Passwords do not match',
 
-  // Recipes
-  recipe404: 'Recipe not found',
-  missingMealId: 'Missing meal definition',
+  // Stories
+  recipe404: 'Story not found',
+  missingMealId: 'Missing story definition',
 
   // Locale
   localeDoesNotExist: 'Sorry, we do not support that local',

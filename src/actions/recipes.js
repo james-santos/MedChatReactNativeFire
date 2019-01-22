@@ -1,7 +1,7 @@
 import { Firebase, FirebaseRef } from '../lib/firebase';
-
+// Redux Actions
 /**
-  * Get this User's Favourite Recipes
+  * Get this User's Favorite Stories
   */
 export function getFavourites(dispatch) {
   if (Firebase === null) return () => new Promise(resolve => resolve());
@@ -22,7 +22,7 @@ export function getFavourites(dispatch) {
 }
 
 /**
-  * Reset a User's Favourite Recipes in Redux (eg for logou)
+  * Reset a User's Favorite Stories in Redux
   */
 export function resetFavourites(dispatch) {
   return dispatch({
@@ -32,7 +32,7 @@ export function resetFavourites(dispatch) {
 }
 
 /**
-  * Update My Favourites Recipes
+  * Update My Favorite Stories
   */
 export function replaceFavourites(newFavourites) {
   if (Firebase === null) return () => new Promise(resolve => resolve());
@@ -44,7 +44,7 @@ export function replaceFavourites(newFavourites) {
 }
 
 /**
-  * Get Meals
+  * Get Story
   */
 export function getMeals() {
   if (Firebase === null) return () => new Promise(resolve => resolve());

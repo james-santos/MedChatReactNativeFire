@@ -16,13 +16,13 @@ const RecipeView = ({
   // Error
   if (error) return <Error content={error} />;
 
-  // Get this Recipe from all recipes
+  // Get this Story from all Stories
   let recipe = null;
   if (recipeId && recipes) {
     recipe = recipes.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
   }
 
-  // Recipe not found
+  // Story not found
   if (!recipe) return <Error content={ErrorMessages.recipe404} />;
 
   // Build Ingredients listing
@@ -62,7 +62,7 @@ const RecipeView = ({
         <Card>
           <CardItem header bordered>
             <Text>
-              About this recipe
+              Here's My Story
             </Text>
           </CardItem>
           <CardItem>
@@ -77,7 +77,7 @@ const RecipeView = ({
         <Card>
           <CardItem header bordered>
             <Text>
-              Ingredients
+              Tags or Other Agencies
             </Text>
           </CardItem>
           <CardItem>
@@ -92,7 +92,7 @@ const RecipeView = ({
         <Card>
           <CardItem header bordered>
             <Text>
-              Method
+              Comments or Notes
             </Text>
           </CardItem>
           <CardItem>

@@ -1,6 +1,8 @@
 /**
   * Show Error
   */
+// Redux Actions
+
 export default function (dispatch, type, val) {
   return new Promise((resolve, reject) => {
     // Validate types
