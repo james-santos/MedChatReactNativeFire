@@ -6,22 +6,22 @@
   "meals": [
     {
       "id": 1,
-      "title": "Lunch"
+      "title": "Day Shift"
     },
     {
       "id": 2,
-      "title": "Dinner"
+      "title": "Night Shift"
     }
   ],
   "recipes" : [
     {
       "id": 1,
       "slug": "this-is-an-article",
-      "title": "This is an Article",
+      "title": "Anyone care for soup?",
       "body": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "author": "John Smith",
       "category": 1,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-1.jpg?alt=media&token=9f7c839b-2d40-4660-a2a0-bf6c2f64a2e5",
+      "image": "https://firebasestorage.googleapis.com/v0/b/medchat-react-native-firebase.appspot.com/o/soup.jpg?alt=media&token=71202318-f887-453c-a9c7-a93d16365414",
       "ingredients": [
         "sed do eiusmod tempor incididunt",
         "aute irure dolor in",
@@ -39,11 +39,11 @@
     {
       "id": 2,
       "slug": "dummy-text-of-the-printing",
-      "title": "Dummy text of the printing",
+      "title": "It ain't gunna shoot ya",
       "body": "Typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "author": "Jane Doe",
       "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-2.jpg?alt=media&token=6ed1740b-529b-4772-9a92-615e92b544b2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/medchat-react-native-firebase.appspot.com/o/itAintGunnaShootYa.jpg?alt=media&token=b3208a1a-da30-43f7-a4d0-020e2d4a608d",
       "ingredients": [
         "sed do eiusmod tempor incididunt",
         "aute irure dolor in",
@@ -61,11 +61,11 @@
     {
       "id": 3,
       "slug": "survived-not-only-five",
-      "title": "Survived not only five",
+      "title": "What are all those rings??",
       "body": "Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "author": "Jane Doe",
       "category": 1,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-3.jpg?alt=media&token=ad0c1913-fd82-48fa-937c-4298875544fa",
+      "image": "https://firebasestorage.googleapis.com/v0/b/medchat-react-native-firebase.appspot.com/o/whatAreAllThose.jpg?alt=media&token=28dc654f-4408-4b2a-b82d-bd9925ea00fd",
       "ingredients": [
         "sed do eiusmod tempor incididunt",
         "aute irure dolor in",
@@ -83,11 +83,11 @@
     {
       "id": 4,
       "slug": "standard-dummy-text-ever",
-      "title": "Standard dummy text ever",
+      "title": "Single fire",
       "body": "Has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "author": "John Smith",
       "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-4.jpg?alt=media&token=52d5ab1a-98af-42cb-adaf-da04666a7953",
+      "image": "https://firebasestorage.googleapis.com/v0/b/medchat-react-native-firebase.appspot.com/o/whitefire.jpg?alt=media&token=39c3f3c3-551f-4265-8799-4cba4f155ff5",
       "ingredients": [
         "sed do eiusmod tempor incididunt",
         "aute irure dolor in",
@@ -103,167 +103,13 @@
       ]
     },
     {
-      "id": 5,
-      "slug": "remaining-essentially-unchanged",
-      "title": "Remaining essentially unchanged",
-      "body": "Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+      "id": 4,
+      "slug": "standard-dummy-text-ever",
+      "title": "Mix fire story title",
+      "body": "Has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
       "author": "John Smith",
       "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-1.jpg?alt=media&token=9f7c839b-2d40-4660-a2a0-bf6c2f64a2e5",
-      "ingredients": [
-        "sed do eiusmod tempor incididunt",
-        "aute irure dolor in",
-        "do eiusmod tempor",
-        "uis aute irure dolor in",
-        "doloremque laudantium",
-        "cupidatat non proident"
-      ],
-      "method": [
-        "iste natus error sit voluptatem accusantium doloremque laudantium",
-        "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-        "sed quia non numquam eius modi tempora incidunt ut labore"
-      ]
-    },
-    {
-      "id": 6,
-      "slug": "only-five-centuries",
-      "title": "Only five centuries",
-      "body": "Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "author": "John Smith",
-      "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-2.jpg?alt=media&token=6ed1740b-529b-4772-9a92-615e92b544b2",
-      "ingredients": [
-        "sed do eiusmod tempor incididunt",
-        "aute irure dolor in",
-        "do eiusmod tempor",
-        "uis aute irure dolor in",
-        "doloremque laudantium",
-        "cupidatat non proident"
-      ],
-      "method": [
-        "iste natus error sit voluptatem accusantium doloremque laudantium",
-        "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-        "sed quia non numquam eius modi tempora incidunt ut labore"
-      ]
-    },
-    {
-      "id": 7,
-      "slug": "but-also-the-leap-into",
-      "title": "But also the leap into",
-      "body": "Dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "author": "Jane Doe",
-      "category": 1,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-1.jpg?alt=media&token=9f7c839b-2d40-4660-a2a0-bf6c2f64a2e5",
-      "ingredients": [
-        "aute irure dolor in",
-        "sed do eiusmod tempor incididunt",
-        "do eiusmod tempor",
-        "uis aute irure dolor in",
-        "doloremque laudantium",
-        "cupidatat non proident"
-      ],
-      "method": [
-        "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-        "iste natus error sit voluptatem accusantium doloremque laudantium",
-        "sed quia non numquam eius modi tempora incidunt ut labore"
-      ]
-    },
-    {
-      "id": 8,
-      "slug": "electronic-typesetting",
-      "title": "Electronic typesetting",
-      "body": "Text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "author": "John Smith",
-      "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-1.jpg?alt=media&token=9f7c839b-2d40-4660-a2a0-bf6c2f64a2e5",
-      "ingredients": [
-        "sed do eiusmod tempor incididunt",
-        "aute irure dolor in",
-        "do eiusmod tempor",
-        "uis aute irure dolor in",
-        "doloremque laudantium",
-        "cupidatat non proident"
-      ],
-      "method": [
-        "iste natus error sit voluptatem accusantium doloremque laudantium",
-        "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-        "sed quia non numquam eius modi tempora incidunt ut labore"
-      ]
-    },
-    {
-      "id": 9,
-      "slug": "essentially-unchanged",
-      "title": "Essentially unchanged",
-      "body": "Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "author": "John Smith",
-      "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-2.jpg?alt=media&token=6ed1740b-529b-4772-9a92-615e92b544b2",
-      "ingredients": [
-        "sed do eiusmod tempor incididunt",
-        "aute irure dolor in",
-        "do eiusmod tempor",
-        "uis aute irure dolor in",
-        "doloremque laudantium",
-        "cupidatat non proident"
-      ],
-      "method": [
-        "iste natus error sit voluptatem accusantium doloremque laudantium",
-        "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-        "sed quia non numquam eius modi tempora incidunt ut labore"
-      ]
-    },
-    {
-      "id": 10,
-      "slug": "standard-text",
-      "title": "Standard text",
-      "body": "Unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "author": "Jane Doe",
-      "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-1.jpg?alt=media&token=9f7c839b-2d40-4660-a2a0-bf6c2f64a2e5",
-      "ingredients": [
-        "sed do eiusmod tempor incididunt",
-        "aute irure dolor in",
-        "do eiusmod tempor",
-        "uis aute irure dolor in",
-        "doloremque laudantium",
-        "cupidatat non proident"
-      ],
-      "method": [
-        "iste natus error sit voluptatem accusantium doloremque laudantium",
-        "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-        "sed quia non numquam eius modi tempora incidunt ut labore"
-      ]
-    },
-    {
-      "id": 11,
-      "slug": "but-also",
-      "title": "But also",
-      "body": "Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "author": "John Smith",
-      "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-3.jpg?alt=media&token=ad0c1913-fd82-48fa-937c-4298875544fa",
-      "ingredients": [
-        "sed do eiusmod tempor incididunt",
-        "aute irure dolor in",
-        "do eiusmod tempor",
-        "uis aute irure dolor in",
-        "doloremque laudantium",
-        "cupidatat non proident"
-      ],
-      "method": [
-        "iste natus error sit voluptatem accusantium doloremque laudantium",
-        "magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet",
-        "sed quia non numquam eius modi tempora incidunt ut labore"
-      ]
-    },
-    {
-      "id": 12,
-      "slug": "text-but-also",
-      "title": "Text But also",
-      "body": "Industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "author": "John Smith",
-      "category": 2,
-      "image": "https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-2.jpg?alt=media&token=6ed1740b-529b-4772-9a92-615e92b544b2",
+      "image": "https://firebasestorage.googleapis.com/v0/b/medchat-react-native-firebase.appspot.com/o/mixfire.jpg?alt=media&token=e16e7a2e-5042-4a03-945a-40e783d201db",
       "ingredients": [
         "sed do eiusmod tempor incididunt",
         "aute irure dolor in",
