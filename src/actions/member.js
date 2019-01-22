@@ -1,7 +1,7 @@
 import ErrorMessages from '../constants/errors';
 import statusMessage from './status';
 import { Firebase, FirebaseRef } from '../lib/firebase';
-
+// Redux Actions
 /**
   * Sign Up to Firebase
   */

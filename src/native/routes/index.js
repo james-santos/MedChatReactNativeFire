@@ -50,7 +50,7 @@ const Index = (
 
         <Stack
           key="recipes"
-          title="RECIPES"
+          title="STORIES"
           icon={() => <Icon name="book" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
@@ -112,7 +112,7 @@ const Index = (
       back
       clone
       key="recipe"
-      title="RECIPE"
+      title="STORY"
       {...DefaultProps.navbarProps}
       component={RecipesContainer}
       Layout={RecipeViewComponent}

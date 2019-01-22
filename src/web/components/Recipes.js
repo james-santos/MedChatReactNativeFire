@@ -30,7 +30,7 @@ const RecipeListing = ({ error, loading, recipes }) => {
           {item.body}
         </CardText>
         <Link className="btn btn-primary" to={`/recipe/${item.id}`}>
-          View Recipe
+          View Story
           {' '}
           <i className="icon-arrow-right" />
         </Link>
@@ -44,7 +44,7 @@ const RecipeListing = ({ error, loading, recipes }) => {
       <Row>
         <Col sm="12">
           <h1>
-            Recipes
+            Stories
           </h1>
           <p>
             The following data is read directly from Firebase.

@@ -1,3 +1,5 @@
+// Shared variables (across platforms)
+
 export default {
   apiKey: 'AIzaSyCrvnXCuRxUH-nLKMtVyhIMYoDTOGHUIaY',
   authDomain: 'medchat-react-native-firebase.firebaseapp.com',

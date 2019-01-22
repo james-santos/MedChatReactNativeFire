@@ -15,3 +15,5 @@ export default function changeLocale(locale = DEFAULT_LOCALE) {
     }));
   }).catch(async (err) => { await statusMessage(dispatch, 'error', err.message); throw err.message; });
 }
+
+// Redux Actions

@@ -1,3 +1,5 @@
+// Utilities and custom libraries that are shared across platforms
+
 import * as FirebaseModule from 'firebase';
 import firebaseConfig from '../constants/firebase';
 

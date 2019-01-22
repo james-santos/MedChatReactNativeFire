@@ -1,8 +1,10 @@
+// Shared variables (across platforms)
+
 const devMode = (process.env.NODE_ENV !== 'development');
 
 export default {
   // App Details
-  appName: 'Starter Kit',
+  appName: 'MedChat',
 
   // Build Configuration - eg. Debug or Release?
   DEV: devMode,
