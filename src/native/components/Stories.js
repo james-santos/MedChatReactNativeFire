@@ -12,7 +12,7 @@ import Error from './Error';
 import Header from './Header';
 import Spacer from './Spacer';
 
-const RecipeListing = ({
+const StoryListing = ({
   error,
   loading,
   stories,
@@ -26,7 +26,7 @@ const RecipeListing = ({
 
   const keyExtractor = item => item.id;
 
-  const onPress = item => Actions.recipe({ match: { params: { id: String(item.id) } } });
+  const onPress = item => Actions.story({ match: { params: { id: String(item.id) } } });
 
   return (
     <Container>
@@ -91,16 +91,16 @@ const RecipeListing = ({
   );
 };
 
-RecipeListing.propTypes = {
+StoryListing.propTypes = {
   error: PropTypes.string,
   loading: PropTypes.bool.isRequired,
   stories: PropTypes.arrayOf(PropTypes.shape()).isRequired,
   reFetch: PropTypes.func,
 };
 
-RecipeListing.defaultProps = {
+StoryListing.defaultProps = {
   error: null,
   reFetch: null,
 };
 
-export default RecipeListing;
+export default StoryListing;

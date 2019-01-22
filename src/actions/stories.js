@@ -46,17 +46,17 @@ export function replaceFavourites(newFavourites) {
 /**
   * Get Story
   */
-export function getMeals() {
+export function getShift() {
   if (Firebase === null) return () => new Promise(resolve => resolve());
 
   return dispatch => new Promise((resolve, reject) => FirebaseRef
-    .child('meals').once('value')
+    .child('shift').once('value')
     .then((snapshot) => {
-      const meals = snapshot.val() || [];
+      const shift = snapshot.val() || [];
 
       return resolve(dispatch({
-        type: 'MEALS_REPLACE',
-        data: meals,
+        type: 'SHIFT_REPLACE',
+        data: shift,
       }));
     }).catch(reject)).catch(e => console.log(e));
 }
@@ -66,7 +66,7 @@ export function getMeals() {
   */
 export function setError(message) {
   return dispatch => new Promise(resolve => resolve(dispatch({
-    type: 'RECIPES_ERROR',
+    type: 'STORIES_ERROR',
     data: message,
   })));
 }
@@ -74,7 +74,7 @@ export function setError(message) {
 /**
   * Get Stories
   */
-export function getRecipes() {
+export function getStories() {
   if (Firebase === null) return () => new Promise(resolve => resolve());
 
   return dispatch => new Promise(resolve => FirebaseRef.child('stories')
@@ -82,7 +82,7 @@ export function getRecipes() {
       const stories = snapshot.val() || [];
 
       return resolve(dispatch({
-        type: 'RECIPES_REPLACE',
+        type: 'STORIES_REPLACE',
         data: stories,
       }));
     })).catch(e => console.log(e));

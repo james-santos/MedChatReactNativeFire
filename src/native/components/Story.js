@@ -8,25 +8,25 @@ import ErrorMessages from '../../constants/errors';
 import Error from './Error';
 import Spacer from './Spacer';
 
-const RecipeView = ({
+const StoryView = ({
   error,
   stories,
-  recipeId,
+  storyId,
 }) => {
   // Error
   if (error) return <Error content={error} />;
 
   // Get this Story from all Stories
-  let recipe = null;
-  if (recipeId && stories) {
-    recipe = stories.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
+  let story = null;
+  if (storyId && stories) {
+    story = stories.find(item => parseInt(item.id, 10) === parseInt(storyId, 10));
   }
 
   // Story not found
-  if (!recipe) return <Error content={ErrorMessages.recipe404} />;
+  if (!story) return <Error content={ErrorMessages.story404} />;
 
   // Build Ingredients listing
-  const ingredients = recipe.ingredients.map(item => (
+  const ingredients = story.ingredients.map(item => (
     <ListItem key={item} rightIcon={{ style: { opacity: 0 } }}>
       <Text>
         {item}
@@ -35,7 +35,7 @@ const RecipeView = ({
   ));
 
   // Build Method listing
-  const method = recipe.method.map(item => (
+  const method = story.method.map(item => (
     <ListItem key={item} rightIcon={{ style: { opacity: 0 } }}>
       <Text>
         {item}
@@ -46,16 +46,16 @@ const RecipeView = ({
   return (
     <Container>
       <Content padder>
-        <Image source={{ uri: recipe.image }} style={{ height: 100, width: null, flex: 1 }} />
+        <Image source={{ uri: story.image }} style={{ height: 100, width: null, flex: 1 }} />
 
         <Spacer size={25} />
         <H3>
-          {recipe.title}
+          {story.title}
         </H3>
         <Text>
           by
           {' '}
-          {recipe.author}
+          {story.author}
         </Text>
         <Spacer size={15} />
 
@@ -68,7 +68,7 @@ const RecipeView = ({
           <CardItem>
             <Body>
               <Text>
-                {recipe.body}
+                {story.body}
               </Text>
             </Body>
           </CardItem>
@@ -108,14 +108,14 @@ const RecipeView = ({
   );
 };
 
-RecipeView.propTypes = {
+StoryView.propTypes = {
   error: PropTypes.string,
-  recipeId: PropTypes.string.isRequired,
+  storyId: PropTypes.string.isRequired,
   stories: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
-RecipeView.defaultProps = {
+StoryView.defaultProps = {
   error: null,
 };
 
-export default RecipeView;
+export default StoryView;

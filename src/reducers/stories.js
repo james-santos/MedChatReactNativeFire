@@ -2,7 +2,7 @@ import Store from '../store/stories';
 
 export const initialState = Store;
 
-export default function recipeReducer(state = initialState, action) {
+export default function storyReducer(state = initialState, action) {
   switch (action.type) {
     case 'FAVOURITES_REPLACE': {
       return {
@@ -10,21 +10,21 @@ export default function recipeReducer(state = initialState, action) {
         favourites: action.data || [],
       };
     }
-    case 'MEALS_REPLACE': {
+    case 'SHIFT_REPLACE': {
       return {
         ...state,
         error: null,
         loading: false,
-        meals: action.data,
+        shift: action.data,
       };
     }
-    case 'RECIPES_ERROR': {
+    case 'STORIES_ERROR': {
       return {
         ...state,
         error: action.data,
       };
     }
-    case 'RECIPES_REPLACE': {
+    case 'STORIES_REPLACE': {
       let stories = [];
 
       // Pick out the props I need

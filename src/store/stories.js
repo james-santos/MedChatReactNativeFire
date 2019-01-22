@@ -1,11 +1,11 @@
 export default {
   loading: true,
   error: null,
-  meals: [
+  shift: [
     { id: 1, title: '---' },
     { id: 2, title: '----- ---' },
   ],
-  recipes: [
+  stories: [
     {
       placeholder: true,
       id: 0,
@@ -13,7 +13,7 @@ export default {
       body: '---- --- -- ------ ---- --- -- ------ ---- --- -- ------ ---- --- -- ------',
       author: '---- ------ ',
       category: 1,
-      image: 'https://firebasestorage.googleapis.com/v0/b/react-native-starter-app.appspot.com/o/image-1.jpg?alt=media&token=9f7c839b-2d40-4660-a2a0-bf6c2f64a2e5',
+      image: 'https://firebasestorage.googleapis.com/v0/b/medchat-react-native-firebase.appspot.com/o/mixfire.jpg?alt=media&token=e16e7a2e-5042-4a03-945a-40e783d201db',
       ingredients: [
         '---- --- -- ------',
         '---- ------ --- --',
