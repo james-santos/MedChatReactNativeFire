@@ -3,7 +3,7 @@ import {
   Container, Content, Text, H1, H2,
 } from 'native-base';
 import Spacer from './Spacer';
-
+/*eslint-disable*/
 const About = () => (
   <Container>
     <Content padder>
@@ -13,7 +13,11 @@ const About = () => (
       </H1>
       <Spacer size={10} />
       <Text>
-     MedChat is a platform to allow emergency responders to share their stories and pictures with the world. Create your account with your email and password and then post your story at the welcome page. The Top Stories section shows all user submitted stories in order of popularity (upvotes). User data (stories, account info, media) is stored on our Firebase server.
+     MedChat is a platform to allow emergency responders to share their stories and pictures with the world. What else to we love besides a good story? Good food! So if you don't have a story, post your recipe.
+
+    {' '}
+
+    Create your account with your email and password and then post your content at the welcome page. The Top Stories section shows all user submitted data in order of popularity (upvotes). User data (text body, account info, media) is stored on our Firebase server.
 
         {' '}
       </Text>
@@ -30,7 +34,7 @@ const About = () => (
 
       <Spacer size={30} />
       <H2>
-        Post your story here:
+        Post your story or recipe here:
       </H2>
       <Spacer size={10} />
       <Text>

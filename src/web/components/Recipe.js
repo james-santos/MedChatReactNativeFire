@@ -18,7 +18,7 @@ import Error from './Error';
 const RecipeView = ({
   error,
   loading,
-  recipes,
+  stories,
   recipeId,
 }) => {
   // Loading
@@ -27,16 +27,16 @@ const RecipeView = ({
   // Error
   if (error) return <Error content={error} />;
 
-  // Get this Recipe from all recipes
+  // Get this Story from all stories
   let recipe = null;
-  if (recipeId && recipes) {
-    recipe = recipes.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
+  if (recipeId && stories) {
+    recipe = stories.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
   }
 
   // Recipe not found
   if (!recipe) return <Error content={ErrorMessages.recipe404} />;
 
-  // Build Ingredients listing
+  // Build listing
   const ingredients = recipe.ingredients.map(item => (
     <ListGroupItem key={`${item}`}>
       {item}
@@ -68,7 +68,7 @@ const RecipeView = ({
         <Col lg="4" className="recipe-view-card">
           <Card>
             <CardHeader>
-              About this recipe
+              About this story
             </CardHeader>
             <CardBody>
               <CardText>
@@ -100,7 +100,7 @@ const RecipeView = ({
       </Row>
       <Row className="pb-3">
         <Col sm="12">
-          <Link className="btn btn-secondary" to="/recipes">
+          <Link className="btn btn-secondary" to="/stories">
             <i className="icon-arrow-left" />
             {' '}
             Back
@@ -115,7 +115,7 @@ RecipeView.propTypes = {
   error: PropTypes.string,
   loading: PropTypes.bool.isRequired,
   recipeId: PropTypes.string.isRequired,
-  recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  stories: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 RecipeView.defaultProps = {

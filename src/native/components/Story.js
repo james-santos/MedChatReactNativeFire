@@ -10,7 +10,7 @@ import Spacer from './Spacer';
 
 const RecipeView = ({
   error,
-  recipes,
+  stories,
   recipeId,
 }) => {
   // Error
@@ -18,8 +18,8 @@ const RecipeView = ({
 
   // Get this Story from all Stories
   let recipe = null;
-  if (recipeId && recipes) {
-    recipe = recipes.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
+  if (recipeId && stories) {
+    recipe = stories.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
   }
 
   // Story not found
@@ -111,7 +111,7 @@ const RecipeView = ({
 RecipeView.propTypes = {
   error: PropTypes.string,
   recipeId: PropTypes.string.isRequired,
-  recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+  stories: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
 RecipeView.defaultProps = {
