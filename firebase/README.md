@@ -1,8 +1,8 @@
 # Firebase Cloud Functions
 
-[Learn more](https://firebase.google.com/docs/functions/) about this tool.
+(https://firebase.google.com/docs/functions/)
 
-This repo comes with a couple of handy examples, to get you up and running. You can find out what they do by [reading the comments](/firebase-cloud-functions/functions/index.js).
+reading the comments at (/firebase-cloud-functions/functions/index.js).
 
 ## Deploy
 
