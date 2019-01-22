@@ -18,7 +18,7 @@ export default {
   passwordsDontMatch: 'Passwords do not match',
 
   // Stories
-  recipe404: 'Story not found',
+  story404: 'Story not found',
   missingMealId: 'Missing story definition',
 
   // Locale

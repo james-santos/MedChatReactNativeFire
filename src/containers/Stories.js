@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-import { getRecipes, getMeals, setError } from '../actions/stories';
+import { getStories, getShift, setError } from '../actions/stories';
 
-class RecipeListing extends Component {
+class StoryListing extends Component {
   static propTypes = {
     Layout: PropTypes.func.isRequired,
     stories: PropTypes.shape({
@@ -15,8 +15,8 @@ class RecipeListing extends Component {
     match: PropTypes.shape({
       params: PropTypes.shape({}),
     }),
-    fetchRecipes: PropTypes.func.isRequired,
-    fetchMeals: PropTypes.func.isRequired,
+    fetchStories: PropTypes.func.isRequired,
+    fetchShift: PropTypes.func.isRequired,
     showError: PropTypes.func.isRequired,
   }
 
@@ -24,15 +24,16 @@ class RecipeListing extends Component {
     match: null,
   }
 
-  componentDidMount = () => this.fetchRecipes();
+  componentDidMount = () => this.fetchStories();
 
   /**
     * Fetch Data from API, saving to Redux
     */
-  fetchRecipes = () => {
-    const { fetchRecipes, fetchMeals, showError } = this.props;
-    return fetchRecipes()
-      .then(() => fetchMeals())
+   /*eslint-disable*/
+   fetchStories = () => {
+    const { fetchStories, fetchShift, showError } = this.props;
+    return fetchStories()
+      .then(() => fetchShift())
       .catch((err) => {
         console.log(`Error: ${err}`);
         return showError(err);
@@ -45,11 +46,11 @@ class RecipeListing extends Component {
 
     return (
       <Layout
-        recipeId={id}
+        storyId={id}
         error={stories.error}
         loading={stories.loading}
         stories={stories.stories}
-        reFetch={() => this.fetchRecipes()}
+        reFetch={() => this.fetchStories()}
       />
     );
   }
@@ -60,9 +61,9 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {
-  fetchRecipes: getRecipes,
-  fetchMeals: getMeals,
+  fetchStories: getStories,
+  fetchShift: getShift,
   showError: setError,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(RecipeListing);
+export default connect(mapStateToProps, mapDispatchToProps)(StoryListing);

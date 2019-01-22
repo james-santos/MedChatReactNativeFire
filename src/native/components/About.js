@@ -13,7 +13,7 @@ const About = () => (
       </H1>
       <Spacer size={10} />
       <Text>
-     MedChat is a platform to allow emergency responders to share their stories and pictures with the world. What else to we love besides a good story? Good food! So if you don't have a story, post your recipe.
+     MedChat is a platform to allow emergency responders to share their stories and pictures with the world. What else to we love besides a good story? Good food! If you don't have a story, post your recipe or some amazing looking food.
 
     {' '}
 

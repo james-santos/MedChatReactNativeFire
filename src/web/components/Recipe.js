@@ -15,11 +15,11 @@ import ErrorMessages from '../../constants/errors';
 import Loading from './Loading';
 import Error from './Error';
 
-const RecipeView = ({
+const StoryView = ({
   error,
   loading,
   stories,
-  recipeId,
+  storyId,
 }) => {
   // Loading
   if (loading) return <Loading />;
@@ -28,23 +28,23 @@ const RecipeView = ({
   if (error) return <Error content={error} />;
 
   // Get this Story from all stories
-  let recipe = null;
-  if (recipeId && stories) {
-    recipe = stories.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
+  let story = null;
+  if (storyId && stories) {
+    story = stories.find(item => parseInt(item.id, 10) === parseInt(storyId, 10));
   }
 
-  // Recipe not found
-  if (!recipe) return <Error content={ErrorMessages.recipe404} />;
+  // Story not found
+  if (!story) return <Error content={ErrorMessages.story404} />;
 
   // Build listing
-  const ingredients = recipe.ingredients.map(item => (
+  const ingredients = story.ingredients.map(item => (
     <ListGroupItem key={`${item}`}>
       {item}
     </ListGroupItem>
   ));
 
   // Build Method listing
-  const method = recipe.method.map(item => (
+  const method = story.method.map(item => (
     <ListGroupItem key={`${item}`}>
       {item}
     </ListGroupItem>
@@ -55,29 +55,29 @@ const RecipeView = ({
       <Row>
         <Col sm="12">
           <h1>
-            {recipe.title}
+            {story.title}
           </h1>
           <p>
             by
             {' '}
-            {recipe.author}
+            {story.author}
           </p>
         </Col>
       </Row>
       <Row>
-        <Col lg="4" className="recipe-view-card">
+        <Col lg="4" className="story-view-card">
           <Card>
             <CardHeader>
               About this story
             </CardHeader>
             <CardBody>
               <CardText>
-                {recipe.body}
+                {story.body}
               </CardText>
             </CardBody>
           </Card>
         </Col>
-        <Col lg="4" className="recipe-view-card">
+        <Col lg="4" className="story-view-card">
           <Card>
             <CardHeader>
               Ingredients
@@ -87,7 +87,7 @@ const RecipeView = ({
             </ListGroup>
           </Card>
         </Col>
-        <Col lg="4" className="recipe-view-card">
+        <Col lg="4" className="story-view-card">
           <Card>
             <CardHeader>
               Method
@@ -111,15 +111,15 @@ const RecipeView = ({
   );
 };
 
-RecipeView.propTypes = {
+StoryView.propTypes = {
   error: PropTypes.string,
   loading: PropTypes.bool.isRequired,
-  recipeId: PropTypes.string.isRequired,
+  storyId: PropTypes.string.isRequired,
   stories: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
-RecipeView.defaultProps = {
+StoryView.defaultProps = {
   error: null,
 };
 
-export default RecipeView;
+export default StoryView;
